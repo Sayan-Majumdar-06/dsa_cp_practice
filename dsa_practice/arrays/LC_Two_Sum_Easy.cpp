@@ -1,8 +1,10 @@
 // LeetCode Problem : Two Sum
 // Difficulty : Easy
 // Link : https://leetcode.com/problems/two-sum/description/?envType=problem-list-v2&envId=array
+// Approach : Brute Force
 
-#include<bits/stdc++.h>
+#include<iostream>
+#include<vector>
 using namespace std;
 
 class Solution {
