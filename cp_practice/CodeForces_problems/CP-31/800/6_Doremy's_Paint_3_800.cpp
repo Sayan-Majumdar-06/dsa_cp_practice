@@ -1,3 +1,7 @@
+// Problem : Doremy's Paint 3(CodeForces)
+// Rating : 800
+// Problem link : https://codeforces.com/problemset/problem/1890/A
+
 #include<bits/stdc++.h>
 using namespace std;
 

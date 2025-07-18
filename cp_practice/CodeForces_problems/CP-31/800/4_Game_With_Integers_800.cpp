@@ -1,3 +1,7 @@
+// Problem : Game with Integers(CodeForces)
+// Rating : 800
+// Problem link : https://codeforces.com/problemset/problem/1899/A
+
 #include<bits/stdc++.h>
 using namespace std;
 

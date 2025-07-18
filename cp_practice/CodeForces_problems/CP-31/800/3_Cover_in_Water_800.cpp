@@ -1,3 +1,7 @@
+// Problem : Cover in Water(CodeForces)
+// Rating : 800
+// Problem link : https://codeforces.com/problemset/problem/1900/A
+
 #include<bits/stdc++.h>
 using namespace std;
 

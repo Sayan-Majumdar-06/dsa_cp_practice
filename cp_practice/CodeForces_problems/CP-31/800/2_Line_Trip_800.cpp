@@ -1,3 +1,7 @@
+// Problem : Line Trip(CodeForces)
+// Rating : 800
+// Problem link : https://codeforces.com/problemset/problem/1901/A
+
 #include<bits/stdc++.h>
 using namespace std;
 
