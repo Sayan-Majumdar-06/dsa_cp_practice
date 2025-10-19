@@ -1,6 +1,6 @@
-// GeeksforGeeks Problem : Second Largest
+// GeeksforGeeks Problem : Union of 2 Sorted Arrays
 // Difficulty : Medium
-// Link : https://www.geeksforgeeks.org/problems/second-largest3735/1
+// Link : https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1
 // Approach 1 : Brute-force (using STL (sets))
 
 #include<iostream>
