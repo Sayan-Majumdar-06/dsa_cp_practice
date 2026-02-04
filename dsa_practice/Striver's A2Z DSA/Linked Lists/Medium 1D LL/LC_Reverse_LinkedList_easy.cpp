@@ -2,7 +2,7 @@
 // Difficulty : Easy
 // Link : https://leetcode.com/problems/reverse-linked-list/
 
-// Approach: Iterative
+// Approach 1: Iterative
 
 #include<iostream>
 #include<math.h>
@@ -16,7 +16,7 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-class Solution {
+class Solution1 {
 public:
     ListNode* reverseList(ListNode* head) {
         ListNode* curr = head;
@@ -30,6 +30,24 @@ public:
         }
 
         head = prev;
+        return head;
+    }
+};
+
+// Approach 2: Recursive
+class Solution2 {
+private:
+    void reverseNode(ListNode*& head, ListNode* prev, ListNode* node) {
+        if(node == nullptr) {
+            head = prev;
+            return;
+        }
+        reverseNode(head, node, node -> next);
+        node -> next = prev;
+    }
+public:
+    ListNode* reverseList(ListNode* head) {
+        reverseNode(head, nullptr, head);
         return head;
     }
 };
