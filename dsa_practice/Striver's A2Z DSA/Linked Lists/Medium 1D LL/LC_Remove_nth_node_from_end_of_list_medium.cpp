@@ -15,7 +15,7 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-class Solution {
+class Solution1 {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         ListNode* mover = head;
@@ -48,6 +48,38 @@ public:
 
             mover = mover -> next;
         }
+
+        return head;
+    }
+};
+
+// Approach 2: fast and slow pointers
+
+class Solution2 {
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        ListNode* fast = head;
+        ListNode* slow = head;
+
+        for(int i = 0; i < n; i++) {
+            fast = fast -> next;
+        }
+
+        if(fast == nullptr) {
+            ListNode* delNode = head;
+            head = head -> next;
+            delete(delNode);
+            return head;
+        }
+
+        while(fast != nullptr && fast -> next != nullptr) {
+            fast = fast -> next;
+            slow = slow -> next;
+        }
+
+        ListNode* delNode = slow -> next;
+        slow -> next = (slow -> next) -> next;
+        delete(delNode);
 
         return head;
     }
